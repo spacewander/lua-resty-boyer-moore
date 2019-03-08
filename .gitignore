@@ -1,0 +1,6 @@
+t/servroot
+*.o
+*.so
+.luacheckcache
+perf.data
+perf.data.*
