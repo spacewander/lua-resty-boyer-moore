@@ -155,3 +155,16 @@ say_find(bm_find("", ""))
 1 0
 nil
 1 0
+
+
+
+=== TEST 6: more interesting cases
+https://news.ycombinator.com/item?id=22895932
+--- lua
+local s = "xxaaa"
+say_find(bm_find(s, "aaa"))
+s = "https://www.example.com/"
+say_find(bm_find(s, "www"))
+--- response_body
+3 5
+9 11
